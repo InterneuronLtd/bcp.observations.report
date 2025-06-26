@@ -1,0 +1,135 @@
+<!--BEGIN LICENSE BLOCK--> 
+<!--Interneuron Terminus
+
+Copyright(C) 2025  Interneuron Limited
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.If not, see<http://www.gnu.org/licenses/>. -->
+<!--END LICENSE BLOCK--> 
+ <!-- Interneuron Observation App
+Copyright(C) 2023  Interneuron Holdings Ltd
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with this program.If not, see<http://www.gnu.org/licenses/>.  -->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>TerminusModuleObservationChart</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+  <script>
+      async function downloadPDF() {
+            const myElement = document.getElementById('loader');
+            if (myElement) {
+              myElement.style.removeProperty('display'); // Removes `display: none !important`
+              myElement.style.display = 'block'; // Apply new style
+            }
+            const items = document.querySelectorAll(".no-print");
+            items.forEach((item) => {
+              item.style.display = "none";
+            });
+            const content = document.getElementById("moduleWrapper");
+            // console('called', content);
+            var opt = {
+              margin:       [15,0,15,0],
+              // filename:     'myfile.pdf',
+              image:        { type: 'jpeg', quality: 0.98 },
+              html2canvas:  { scale: 1, width: 1260, dpi: 192 },
+              jsPDF:        { unit: 'mm', format: [210, 330], orientation: 'portrait' },
+              // pagebreak:    { avoid: ['tr','table'] }
+            };
+
+            setTimeout(() => {
+                  html2pdf().from(content).set(opt).toPdf().get('pdf').then(async (pdf) => {
+                  var totalPages = pdf.internal.getNumberOfPages();
+                  let currTime = moment(moment()).format('HH:mm');
+                  for (let i = 1; i <= totalPages; i++) {
+                    
+                    pdf.setPage(i);
+                    // set header to every page
+                    pdf.setFont(undefined,'bold');
+                    pdf.setFontSize(10);
+                    pdf.text(' ' + document.getElementById("patient-name").innerHTML + ', ' + document.getElementById("patient-dob").innerHTML + ', ' + document.getElementById("patient-gender").innerHTML + ', ' + document.getElementById("patient-nhsnumber").innerHTML + ', ' + document.getElementById("patient-hospitalnumber").innerHTML + ', Report last updated: ' + moment(moment()).format('DD/MM/YYYY HH:mm'),10,6,null,null);
+
+                  // set footer to every page
+                    pdf.setFont(undefined,'normal');
+                    pdf.setFontSize(9);
+                    var today = new Date();
+                    var dd = String(today.getDate()).padStart(2, '0');
+                    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+                    var yyyy = today.getFullYear();
+
+                    let date =dd + '/' + mm + '/' + yyyy;
+                    pdf.text('South London and Maudsley, ' + document.getElementById("patient-currentlocation").innerHTML + ', Admission Date: ' + document.getElementById("patient-admitdate").innerHTML + ', LoS:' +document.getElementById("patient-Los").innerHTML , 10,324,null,null);
+                    pdf.text('Page '+ String(i) + ' of ' + totalPages + ' Date/Time: ' + date+ ' ' + currTime,80,328,null,null);
+                  }
+
+                // pdf.save("document.pdf");
+                window.open(pdf.output('bloburl'), '_blank');
+                const items2 = document.querySelectorAll(".no-print");
+                items2.forEach((item) => {
+                  item.style.display = "block";
+                });
+                // document.getElementById("loader").style.display = "none";
+                const myElement2 = document.getElementById('loader');
+                if (myElement2) {
+                  myElement2.style.removeProperty('display'); // Removes `display: none !important`
+                  myElement2.style.display = 'none'; // Apply new style
+                }
+              })
+            }, 100)
+
+            
+        }
+        window.downloadPDF = downloadPDF;
+  </script>
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>
+<!-- <script type="text/javascript">
+
+
+  $(document).ready(function () {
+
+    $('form').on('focus', 'input[type=number]', function (e) {
+      $(this).on('mousewheel.disableScroll', function (e) {
+        e.preventDefault()
+      })
+    })
+    $('form').on('blur', 'input[type=number]', function (e) {
+      $(this).off('mousewheel.disableScroll')
+    })
+  });
+</script> -->

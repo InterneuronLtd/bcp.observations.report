@@ -1,0 +1,303 @@
+[
+   {
+      "chart_id": "newsobschart",
+      "chart_group": "",
+      "chartname": "Nursing Observation Chart",
+      "graph_id": "MARSI",
+      "graphname": "Marsi MEWS",
+      "units": null,
+      "graphtype": "Ordinal",
+      "parameterkey": [
+         "earlywarningscore"
+      ],
+      "parameterdomain": [],
+      "secondaryparameterdomain": [],
+      "ewsbandingrange": [
+         "news"
+      ],
+      "parameterlabelsdomain": [
+         "TOTAL"
+      ],
+      "scale": [
+         "MARSI"
+      ],
+      "ordinalparameterdomain": []
+   },
+   {  
+      "chart_id":"newsobschart",
+      "chart_group":"",
+      "chartname":"Nursing Observation Chart",
+      "graph_id":"respirations",
+      "graphname":"Respirations",
+      "units":"Breaths/min",
+      "graphtype":"Threshold",
+      "parameterkey":[  
+         "respirations"
+      ],
+      "parameterdomain":[  
+         10.0,
+         21.0,
+    
+         26.0,
+         28.0
+      ],
+      "secondaryparameterdomain":[  
+
+      ],
+      "ewsbandingrange":[  
+         3.0,
+         0.0,
+         2.0,      
+         3.0
+      ],
+      "parameterlabelsdomain":[  
+         "≤9",     
+         "10-20",
+         "21-25",
+         "≥26"
+      ],
+      "scale":[  
+          "MARSI"
+      ],
+      "ordinalparameterdomain":[  
+
+      ]
+   },
+   {  
+      "chart_id":"newsobschart",
+      "chart_group":"",
+      "chartname":"Nursing Observation Chart",
+      "graph_id":"temperature",
+      "graphname":"Temperature",
+      "units":"°C",
+      "graphtype":"Threshold",
+      "parameterkey":[  
+         "temperature"
+      ],
+      "parameterdomain":[  
+         35.1,
+         36.0,
+         37.1,
+         38.1,
+         39.0
+      ],
+      "secondaryparameterdomain":[  
+
+      ],
+      "ewsbandingrange":[  
+         3.0,
+         2.0,
+         0.0,
+         1.0,
+         2.0,
+         3.0
+      ],
+      "parameterlabelsdomain":[  
+         "≤35.0°",
+         "35.1–35.9°",
+         "36.0–37.0°",
+         "37.1–38.0°",
+         "38.1–38.9°",
+         "≥39.0°"
+      ],
+      "scale":[  
+          "MARSI"
+      ],
+      "ordinalparameterdomain":[  
+
+      ]
+   },
+   {
+      "chart_id": "newsobschart",
+      "chartname": "Nursing Observation Chart",
+      "graph_id": "HeartRate-MARSI",
+      "graphname": "Heart Rate",
+      "units": "HR/min",
+      "graphtype": "Threshold",
+      "parameterkey": [
+        "pulse"
+      ],
+      "parameterdomain": [
+  
+        41.0,    
+        51.0,
+        91.0,
+        101.0,      
+        111.0
+       
+      
+      ],
+      "secondaryparameterdomain": [],
+      "ewsbandingrange": [
+ 
+        3.0,
+        1.0,
+        0.0,     
+        1.0,
+        2.0,
+        3.0
+        
+      ],
+      "parameterlabelsdomain": [
+        "≤40",
+        "41-50",
+       
+        "51-90",
+        "91-100",
+        "101-110",                
+        "≥111"
+      ],
+      "scale":[  
+        "MARSI"
+      ],
+      "ordinalparameterdomain":[  
+  
+      ]
+    },
+    {  
+      "chart_id":"newsobschart",
+      "chart_group":"",
+      "chartname":"Nursing Observation Chart",
+      "graph_id":"bloodpressure",
+      "graphname":"Score Sitting Systolic Blood Pressure",
+      "units":"mmHg",
+      "graphlabeladditionaltext":"Sitting / Standing",
+      "graphtype":"Threshold",
+      "parameterkey":[  
+         "systolicsitting",
+         "diastolicsitting",
+           "systolicstanding",
+         "diastolicstanding"
+      ],
+      "parameterdomain":[  
+         80.0,    
+         90.0, 
+         141.0,
+         151.0,
+         161.0,
+         162.0
+     
+      ],
+      "secondaryparameterdomain":[  
+
+      ],
+      "ewsbandingrange":[  
+         3.0,
+         2.0,
+         0.0,      
+         1.0,
+         2.0,   
+         3.0
+      ],
+      "parameterlabelsdomain":[  
+         "≤79",      
+         "80-89",
+         "90-140",
+         "141-150",
+         "151-160",        
+         "≥161"
+      ],
+      "scale":[  
+          "MARSI"
+      ],
+      "ordinalparameterdomain":[  
+
+      ]
+   },
+   {
+      "chart_id": "newsobschart",
+      "chartname": "Nursing Observation Chart",
+      "graph_id": "score-postural-MARSI",
+      "graphname": "Score Postural",
+      "units": "",
+       "graphlabeladditionaltext":"Systolic Difference - Sitting to Standing",
+      "graphtype": "Threshold",
+      "parameterkey": [
+        "posturalchange"
+      ],
+      "parameterdomain": [
+         10.0,
+        20.0,       
+        30.0,
+        31.0
+       
+      
+      ],
+      "secondaryparameterdomain": [],
+      "ewsbandingrange": [  
+         0.0,
+        1.0,
+        2.0,
+        3.0
+        
+      ],
+      "parameterlabelsdomain": [
+         "≤9",
+        "10-19",       
+        "20-29",                
+        "≥30"
+      ],
+      "scale":[  
+        "MARSI"
+      ],
+      "ordinalparameterdomain":[  
+  
+      ]
+    },
+    {
+  "chart_id": "newsobschart",
+    "chart_group":"",
+    "chartname": "Nursing Observation Chart",
+    "graph_id": "Marsi-OxygenSaturation",
+    "graphname": "Oxygen Saturation",
+    "units": null,
+    "graphtype": "Ordinal",
+    "parameterkey": ["oxygensaturations"],
+    "parameterdomain": [],
+    "secondaryparameterdomain": [],
+    "ewsbandingrange": [],
+    "parameterlabelsdomain": [""],
+    "scale":[  
+      "MARSI"
+    ],
+    "ordinalparameterdomain":[  
+
+    ]
+},
+ {
+  "chart_id": "newsobschart",
+    "chart_group":"",
+    "chartname": "Nursing Observation Chart",
+    "graph_id": "Marsi-ACVPU",
+    "graphname": "ACVPU",
+    "units": null,
+    "graphtype": "Ordinal",
+    "parameterkey": ["consciousness"],
+    "parameterdomain": [],
+    "secondaryparameterdomain": [],
+    "ewsbandingrange": [],
+    "parameterlabelsdomain": [""],
+    "scale":[  
+      "MARSI"
+    ],
+    "ordinalparameterdomain":[  
+
+    ]
+},
+    {
+        "chart_id": "newsobschart",
+        "chart_group":"",
+        "chartname": "Nursing Observation Chart",
+        "graph_id": "recordedby",
+        "graphname": "Recorded by",
+        "units": null,
+        "graphtype": "Ordinal",
+        "parameterkey": ["username"],
+        "parameterdomain": [],
+        "secondaryparameterdomain": [],
+        "ewsbandingrange": [],
+        "parameterlabelsdomain": ["Initials"],
+        "scale":["MARSI"],
+        "ordinalparameterdomain":[]
+    }
+]

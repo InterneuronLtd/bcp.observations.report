@@ -1,0 +1,53 @@
+<!--BEGIN LICENSE BLOCK--> 
+<!--Interneuron Terminus
+
+Copyright(C) 2025  Interneuron Limited
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.If not, see<http://www.gnu.org/licenses/>. -->
+<!--END LICENSE BLOCK--> 
+<!-- Interneuron Observation App
+Copyright(C) 2023  Interneuron Holdings Ltd
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with this program.If not, see<http://www.gnu.org/licenses/>.  -->
+
+<div>
+  <div *ngIf="showChart">
+    <app-observation-chart></app-observation-chart>
+  </div>
+
+  <input hidden style="width: 1px;" id = "encounter_input" value='{"hospitalnumber":"M783282","nhsnumber":"783 462 4282","firstname":"David","lastname":"Clark","gender":"Male","dateofbirth":"2010-12-15","currentlocation":"ASH","primarysublocation":"ASH-BAY5","secondarysublocation":"ASH-BAY5-BED4","admitdatetime":"2022-01-14T15:14:56.654811","dischargedatetime":null,"consultant":"Mr Calvin","patientclasscode":"IP","person_id":"97105af9-29fd-4e5e-a24b-a9796c9e0bee","encounter_id":"b13ceb3a-da8a-4bd8-ae24-805d5eeb05db"}'/>
+  <button  style="width: 1px;"  id="generate_report" (click) = "generateChart()"></button>
+
+  <!-- <input hidden style="width: 1px;" id = "encounter_input" value='{"hospitalnumber" : "M046455","nhsnumber" : "046 319 7455","firstname" : "Madelyn","lastname" : "Gill","gender" : "Female","dateofbirth" : "2002-09-19","currentlocation" : "PLUM","primarysublocation" : "PLUM-BAY4","secondarysublocation" : "PLUM-BAY4-BED2","admitdatetime" : "2003-09-27T09:29:56.654Z","dischargedatetime" : null,"consultant" : "Mr Calvin","patientclasscode" : "IP","person_id" : "afc1c33e-86b8-4202-a04c-34cffd5b0956","encounter_id" : "2b356ca0-aeea-4461-86b3-00ab89cde8e8"}'/>
+  <button  style="width: 1px;"  id="generate_report" (click) = "generateChart()"></button> -->
+
+  <!-- <input id="encounter_input"
+    value='{"hospitalnumber":"M330098","nhsnumber":"330 803 0098","firstname":"Andres","lastname":"Howes","gender":"Male","dateofbirth":"1978-07-16","currentlocation":"PLUM","primarysublocation":"PLUM-BAY5","secondarysublocation":"PLUM-BAY5-BED2","admitdatetime":"2022-01-09T15:14:56.654811","dischargedatetime":null,"consultant":"Mr Calvin","patientclasscode":"IP","person_id":"027c3400-24cd-45c1-9e3d-0f4475336394","encounter_id":"8e6364f3-d8b3-4e93-bcb4-157a58b4052b"}' />
+  <button style="width: 1px;" id="generate_report" (click)="generateChart()">asd</button> -->
+
+  <!-- <input   id = "encounter_input" value='{"hospitalnumber":"M330098","nhsnumber":"330 803 0098","firstname":"Andres","lastname":"Howes","gender":"Male","dateofbirth":"1978-07-16","currentlocation":"PLUM","primarysublocation":"PLUM-BAY5","secondarysublocation":"PLUM-BAY5-BED2","admitdatetime":"2022-01-09T15:14:56.654811","dischargedatetime":null,"consultant":"Mr Calvin","patientclasscode":"IP","person_id":"027c3400-24cd-45c1-9e3d-0f4475336394","encounter_id":"8e6364f3-d8b3-4e93-bcb4-157a58b4052b"}'/>
+  <button  id="generate_report" (click) = "generateChart()">generate</button> -->
+
+</div>

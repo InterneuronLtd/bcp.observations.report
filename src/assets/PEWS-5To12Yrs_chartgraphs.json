@@ -1,0 +1,700 @@
+[
+  
+
+  {
+    "chart_id": "pews-5to12yrs",
+    "chartname": "Nursing Observation Chart",
+    "graph_id": "PEWS-pews-5to12yrs",
+    "graphname": "PEWS 5-12 years",
+    "units": null,
+    "graphtype": "Ordinal",
+    "parameterkey": [
+      "earlywarningscore"
+    ],
+    "parameterdomain": [],
+    "secondaryparameterdomain": [],
+    "ewsbandingrange": [
+      "PEWS-5To12Yrs"
+    ],
+    "parameterlabelsdomain": [
+      ""
+    ],
+    "scale":[  
+      "PEWS-5To12Yrs"
+    ],
+    "ordinalparameterdomain":[  
+
+    ]
+  },
+  {
+    "chart_id": "pews-5to12yrs",
+    "LineSpaceForOrdinal":true,
+    "chartname": "Nursing Observation Chart",
+    "graph_id": "carer-pews-5to12yrs",
+    "graphname": "Carer Question",
+    "units": null,
+    "graphtype": "Ordinal",
+    "parameterkey": [
+      "pews_wsbau"
+    ],
+    "parameterdomain": [],
+    "secondaryparameterdomain": [],
+    "ewsbandingrange": [
+      "PEWS-5To12Yrs"
+    ],
+    "parameterlabelsdomain": [
+      ""
+    ],
+    "scale":[  
+      "PEWS-5To12Yrs"
+    ],
+    "ordinalparameterdomain":[  
+
+    ]
+  },
+  {  
+    "chart_id": "pews-5to12yrs",
+     "chart_group":"A+B",
+    "chartname": "Nursing Observation Chart",
+    "graph_id": "Respiratiory-pews-5to12yrs",
+    "graphname": "Respiratory Rate ",
+    "units": "RR/min",
+    "graphtype": "Threshold",
+    "parameterkey":[  
+       "respirations"
+    ],
+    "parameterdomain": [
+    
+      10.0,
+      15.0,
+      20.0,
+      25.0,
+      30.0,
+      35.0,
+      40.0,
+      45.0,
+      50.0
+     
+    ],
+    "secondaryparameterdomain": [],
+    "ewsbandingrange": [
+      4.0,
+      2.0,
+      1.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      2.0,
+      2.0,   
+      4.0
+    ],
+    "parameterlabelsdomain": [
+      "≤9",
+      "10-14",
+      "15-19",
+      "20-24",
+      "25-29",
+      "30-34",
+      "35-39",
+      "40-44",
+      "45-49",     
+      "≥50"
+    ],
+    "scale":[  
+      "PEWS-5To12Yrs"
+    ],
+    "ordinalparameterdomain":[  
+
+    ]
+ },
+ 
+  {
+    "chart_id": "pews-5to12yrs",
+    "chart_group":"A+B",
+    "chartname": "Nursing Observation Chart",
+    "graph_id": "respiratorydistress-pews-5to12yrs",
+    "graphname": "Respiratory Distress",
+    "units": null,
+    "graphtype": "Ordinal",
+    "parameterkey": [
+      "respiratorydistress"
+    ],
+    "parameterdomain": [],
+    "secondaryparameterdomain": [],
+    "ewsbandingrange": [
+      0.0,
+      1.0,
+      2.0,
+      4.0
+    ],
+    "parameterlabelsdomain": [
+      "None",
+      "Mild",
+      "Moderate",
+      "Severe"
+    ],
+    "ordinalparameterdomain": [
+     
+      "none",
+      "mild",
+      "moderate",
+      "severe"
+      
+    
+    ],
+    "scale":[  
+      "PEWS-5To12Yrs"
+    ]
+  },
+  {
+    "chart_id": "pews-5to12yrs",
+       "chart_group":"A+B",
+    "chartname": "Nursing Observation Chart",
+    "graph_id": "spo2-pews-5to12yrs",
+    "graphname": "SpO2",
+    "units": "",
+    "graphtype": "Threshold",
+    "parameterkey": [
+      
+      "oxygensaturations",
+      "pews_spo2probechange"
+    ],
+    "parameterdomain": [
+      0.0,
+      92.0,
+      95.0,
+      96.0
+      
+    ],
+    "secondaryparameterdomain": [],
+    "ewsbandingrange": [
+      93.0,
+      4.0,
+      1.0,
+      0.0
+    ],
+    "parameterlabelsdomain": [
+      "Probe Change",
+      "≤91",
+      "92-94",
+      "≥95"
+      
+     
+
+    ],
+    "scale":[  
+      "PEWS-5To12Yrs"
+    ],
+    "ordinalparameterdomain":[  
+
+    ]
+  },
+ 
+  {
+    "chart_id": "pews-5to12yrs",
+    "chart_group":"A+B",
+    "chartname": "Nursing Observation Chart",
+    "graph_id": "news2oxygensaturations_scale25to12yrs",
+    "graphname": "Oxygen",
+    "units": "",
+    "graphlabeladditionaltext":"Oxygen as per PGD or prescription box of 100% oxygen. Mark % with a '⦁' and L/min with an 'X'",
+    "graphtype": "Threshold",
+    "parameterkey": [
+      "inspireoxygenpercentage",
+      "airinliter",
+      "inspireoxygenlitrepermin",
+      "airoxygen",
+      "pews_respdevice"
+    ],
+    "parameterdomain": [
+      84.0,
+      86.0,
+      88.0,
+      93.0
+    ],
+    "secondaryparameterdomain": [ ],
+    "ewsbandingrange": [
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      1.0,
+      2.0,
+      2.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0
+    ],
+    "parameterlabelsdomain": [
+      "Flow Rate L/minute ",
+      "Document Air/value",
+      "<0.01 | <21%",
+      "0.01-0.09 | 21-23%",
+      "0.1-0.99 | 24-27%",
+      "1-1.99 | 28-29%",
+      "2-3.99 | 30-39%",
+      "4-5.99 | 40-49%",
+      "6-7.99 | 50-59%",
+      "8-9.99 | 60-69%",
+      "10-14.99 | 70-79%",
+      ">15 | 80-89%",
+      "L/min | >90%",
+      "RSD CODE"
+    ],
+    "scale":[  
+      "PEWS-5To12Yrs"
+    ],
+    "ordinalparameterdomain":[  
+
+    ]
+  },
+  {
+    "chart_id": "pews-5to12yrs",
+       "chart_group":"C",
+    "chartname": "Nursing Observation Chart",
+    "graph_id": "HeartRate-pews-5to12yrs",
+    "graphname": "Heart Rate",
+    "units": "HR/min",
+    "graphtype": "Threshold",
+    "parameterkey": [
+      "pulse"
+    ],
+    "parameterdomain": [
+
+      51.0,    
+      60.0,
+      70.0,
+      80.0,
+      90.0,
+      100.0,
+      110.0,
+      120.0,
+      130.0,
+      140.0,
+      150.0,
+      160.0,
+      170.0,
+      180.0,
+      190.0
+    
+    ],
+    "secondaryparameterdomain": [],
+    "ewsbandingrange": [
+      4.0,
+      4.0,
+      2.0,
+      1.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      1.0,
+      1.0,
+      2.0,
+      2.0,
+      4.0,
+      4.0,   
+      4.0,       
+      4.0
+    ],
+    "parameterlabelsdomain": [
+      "≤50",
+      "51-59",
+      "60-69",
+      "70-79",
+      "80-89",
+      "90-99",
+      "100-109",
+      "110-119",
+      "120-129",
+      "130-139",
+      "140-149", 
+      "150-159",      
+      "160-169",      
+      "170-179",      
+      "180-189",           
+      "≥190"
+    ],
+    "scale":[  
+      "PEWS-5To12Yrs"
+    ],
+    "ordinalparameterdomain":[  
+
+    ]
+  },
+  {
+    "chart_id": "pews-5to12yrs",
+    "chart_group":"C",
+    "chartname": "Nursing Observation Chart",
+    "graph_id": "BloodPresser-pews-5to12yrs",
+    "graphname": "Blood Pressure",
+    "units": "mmHg",
+    "graphlabeladditionaltext":"(Score systolic only) < diastolic (no score) . mean systolic >",
+    "graphtype": "Threshold",
+    "parameterkey": [
+      "systolicbloodpressure",
+     "diastolicbloodpressure",
+     "bpcode"
+    ],
+    "parameterdomain": [
+
+    
+      31.0,
+      40.0,
+      50.0,
+      60.0,
+      70.0,
+      80.0,
+      90.0,
+      100.0,
+      110.0,
+      120.0,
+      130.0,
+      140.0,
+      150.0
+    ],
+    "secondaryparameterdomain": [],
+    "ewsbandingrange": [
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+      4.0,
+
+      2.0,
+
+      1.0,
+
+      0.0,
+      0.0,
+
+      1.0,     
+      2.0,
+      4.0,
+      4.0,
+      4.0,
+      93.0
+    ],
+    "parameterlabelsdomain": [
+      "≤30",
+      "31-39",
+      "40-49",
+      "50-59",
+      "60-69",
+      "70-79",
+      "80-89",
+      "90-99",
+      "100-109",
+      "110-119",
+      "120-129",
+      "130-139",
+      "140-149",              
+      "≥150",
+       "BP code"
+    ],
+    "scale":[  
+      "PEWS-5To12Yrs"
+    ],
+    "ordinalparameterdomain":[  
+
+    ]
+  },
+  {
+    "chart_id": "pews-5to12yrs",
+        "chart_group":"C",
+    "chartname": "Nursing Observation Chart",
+    "graph_id": "CRT-pews-5to12yrs",
+    "graphname": "CRT Recorded in Seconds",
+    "units": "",
+    "graphlabeladditionaltext":"",
+    "graphtype": "Threshold",
+    "parameterkey": [
+      "pews_crt"
+    ],
+    "parameterdomain": [
+
+      3.0,
+      2.0
+   
+    ],
+    "secondaryparameterdomain": [],
+    "ewsbandingrange": [
+      0.0,
+      2.0
+    ],
+    "parameterlabelsdomain": [
+                 
+  
+      "≤2",
+      "≥3"
+    ],
+    "scale":[  
+      "PEWS-5To12Yrs"
+    ],
+    "ordinalparameterdomain":[  
+
+    ]
+  },
+  {
+    "chart_id": "pews-5to12yrs",
+    "chart_group":"D",
+    "chartname": "Nursing Observation Chart",
+    "graph_id": "AVPU-pews-5to12yrs",
+    "graphname": "AVPU",
+    "units": "",   
+    "graphtype": "Ordinal",
+    "parameterkey": [
+      "consciousness"
+    ],
+    "parameterdomain": [
+
+    
+   
+    ],
+    "secondaryparameterdomain": [],
+    "ewsbandingrange": [
+     
+    ],
+    "parameterlabelsdomain": [
+                 
+    
+      ""
+    ],
+    "scale":[  
+      "PEWS-5To12Yrs"
+    ],
+    "ordinalparameterdomain":[  
+
+    ]
+  },
+  
+  {
+    "chart_id": "pews-5to12yrs",
+    "chart_group":"E",
+    "chartname": "Nursing Observation Chart",
+    "graph_id": "BloodPresser-pews-5to12yrs",
+    "graphname": "Temperature",
+    "units": "°C",
+  
+    "graphtype": "Threshold",
+    "parameterkey": [
+      "temperature",
+      "pews_site"
+    ],
+    "parameterdomain": [
+      34.6,
+      35.1,
+      35.6,
+      36.1,
+      36.6,
+      37.1,
+      37.6,
+      38.0,
+      38.6,
+      39.1
+    ],
+    "secondaryparameterdomain": [],
+    "ewsbandingrange": [
+    
+      91.0,
+      91.0,
+      91.0,
+      91.0,
+      93.0,
+      93.0,
+      93.0,
+      93.0,
+      90.0,
+      90.0,
+      90.0
+    ],
+    "parameterlabelsdomain": [
+      "≤34.5°",
+      "34.6°-35.0°",
+     "35.1°-35.5°",
+     "35.6°-36.0°",
+     "36.1°-36.5°",
+     "36.6°-37.0°",
+     "37.1°-37.5°",
+     "37.6°-37.9°",
+     "38.0°-38.5°",
+     "38.6°-39.0°",
+     "≥39.1"
+    ],
+    "scale":[  
+      "PEWS-5To12Yrs"
+    ],
+    "ordinalparameterdomain":[  
+
+    ]
+  },
+  {
+    "chart_id": "pews-5to12yrs",
+    "chartname": "Nursing Observation Chart",
+    "graph_id": "pews_5to12sepsissuspicion",
+    "graphname": "New suspicion of sepsis or septic shock",
+    "units": "",   
+    "graphtype": "Ordinal",
+    "parameterkey": [
+      "pews_sepsissuspicion"
+    ],
+    "parameterdomain": [
+
+    
+   
+    ],
+    "secondaryparameterdomain": [],
+    "ewsbandingrange": [
+      
+     
+    ],
+    "parameterlabelsdomain": ["(Y/N)"],
+    "scale":[  
+      "PEWS-5To12Yrs"
+    ],
+    "ordinalparameterdomain":[  
+
+    ]
+  },
+  {
+    "chart_id": "pews-5to12yrs",
+    "chartname": "Nursing Observation Chart",
+    "graph_id": "pews_5to12nmssuspicion",
+    "graphname": "New suspicion of NMS",
+    "units": "",   
+    "graphtype": "Ordinal",
+    "parameterkey": [
+      "pews_nmssuspicion"
+    ],
+    "parameterdomain": [
+
+    
+   
+    ],
+    "secondaryparameterdomain": [],
+    "ewsbandingrange": [
+      
+     
+    ],
+   "parameterlabelsdomain": ["(Y/N)"],
+   "scale":[  
+     "PEWS-5To12Yrs"
+   ],
+   "ordinalparameterdomain":[  
+
+   ]
+  },
+  {
+    "chart_id": "pews-5to12yrs",
+   
+    "chart_group":"",
+    "chartname": "Nursing Observation Chart",
+    "graph_id": "pews_5to12clinicalintuition",
+    "graphname": "Clinical Intuition",
+    "units": "",
+    "graphtype": "Ordinal",
+    "parameterkey": ["pews_clinicalintuition"],
+    "parameterdomain": [],
+    "secondaryparameterdomain": [],
+    "ewsbandingrange": [],
+    "parameterlabelsdomain": ["(Y/N)"],
+    
+    "scale":[  
+      "PEWS-5To12Yrs"
+    ],
+    "ordinalparameterdomain":[  
+
+    ]
+},{
+  "chart_id": "pews-5to12yrs",
+ 
+    "chart_group":"",
+    "chartname": "Nursing Observation Chart",
+    "graph_id": "pews_5to12escalation",
+    "graphname": "Escalated",
+    "units": null,
+    "graphtype": "Ordinal",
+    "parameterkey": ["escalation"],
+    "parameterdomain": [],
+    "secondaryparameterdomain": [],
+    "ewsbandingrange": [],
+    "parameterlabelsdomain": ["(Y/N)"],
+    "scale":[  
+      "PEWS-5To12Yrs"
+    ],
+    "ordinalparameterdomain":[  
+
+    ]
+}
+,{
+  "chart_id": "pews-5to12yrs",
+ 
+    "chart_group":"",
+    "chartname": "Nursing Observation Chart",
+    "graph_id": "pews_5to12escalationto",
+    "graphname": "Escalated To",
+    "units": null,
+    "graphtype": "Ordinal",
+    "parameterkey": ["escalatedto"],
+    "parameterdomain": [],
+    "secondaryparameterdomain": [],
+    "ewsbandingrange": [],
+    "parameterlabelsdomain": ["Doctor/Nurse"],
+    "scale":[  
+      "PEWS-5To12Yrs"
+    ],
+    "ordinalparameterdomain":[  
+
+    ]
+},
+{
+  "chart_id": "pews-5to12yrs",
+    "chart_group":"",
+    "chartname": "Nursing Observation Chart",
+    "graph_id": "pews-5to12yrs-escalationeevel",
+    "graphname": "Escalation Level",
+    "units": null,
+    "graphtype": "Ordinal",
+    "parameterkey": ["escalationeevel"],
+    "parameterdomain": [],
+    "secondaryparameterdomain": [],
+    "ewsbandingrange": [],
+    "parameterlabelsdomain": [""],
+    "scale":[  
+      "PEWS-5To12Yrs"
+    ],
+    "ordinalparameterdomain":[  
+
+    ]
+},
+
+
+
+
+{
+  "chart_id": "pews-5to12yrs",
+    "chart_group":"",
+    "chartname": "Nursing Observation Chart",
+    "graph_id": "recordedby",
+    "graphname": "Recorded by",
+    "units": null,
+    "graphtype": "Ordinal",
+    "parameterkey": ["username"],
+    "parameterdomain": [],
+    "secondaryparameterdomain": [],
+    "ewsbandingrange": [],
+    "parameterlabelsdomain": ["Initials"],
+    "scale":[  
+      "PEWS-5To12Yrs"
+    ],
+    "ordinalparameterdomain":[  
+
+    ]
+}
+  
+]

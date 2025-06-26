@@ -1,0 +1,550 @@
+{
+  "uris": {
+    "baseuri": "SYNAPSE_DYNAMIC_URI",
+    "autonomicsbaseuri": "AUTONOMIC_URI/Autonomic"
+  },
+  "enablelogging": true,
+  "environment": "mental_healthcare",
+  "pewsAgeThreshold" : 18,
+  "appsettings": {
+   "news2guidance": {
+     "topConcernsText": "Regardless of the NEWS2 score, if you have concerns please immediately discuss with a Registered Nurse or the medical team caring for the patient.",
+     "score0_frequency": "Physical observations every 12 hours, as a minimum, for the first 72 hours of admission.",
+     "score0_clinicalresponse": ["<p>Continue minimum daily NEWS2 monitoring for a minimum of 4 days unless patients' physical condition changes, then a care plan is required.</p><p>Always record respirations and level of consciousness if other observations refused.</p>"],
+     "score0_text": "0",
+     "score0_cssclass": "EWS_0",
+
+     "score1to4_frequency": "To be determined by Registered Nurse after consultation with the clinical team. \n \n Minimum 4 - 6 hourly",
+     "score1to4_clinicalresponse": ["<ol class='ak-ol'><li><p>Inform Registered Nurse (RN) immediately.</p></li><li><p>RN must assess the patient using ABCDE approach to managing a physically unwell patient (see below).</p><ol class='ak-ol'><li><p>RN to decide and document if increased frequency of monitoring and/or escalation to ward/duty doctor is required.<br><strong>Airway</strong> - Is the patient talking? Note any airway noises e.g. gurgling.<br><strong>Breathing</strong> - Check if laboured or if any noises e.g. wheeze. Record respiratory rate and oxygen saturation level.<br><strong>Circulation</strong> - Check manual pulse, blood pressure &amp; capillary refill time<br><strong>Disability</strong> - Check blood sugar levels, level of consciousness (ACVPU), pupil reactions &amp; temperature.<br><strong>Exposure</strong> - Check for any other abnormal signs, any bleeding or rashes.</p></li></ol></li></ol>"],
+     "score1to4_text": "Total 1-4",
+     "score1to4_cssclass": "EWS_LOW",
+
+     "score3single_frequency": "Minimum 1 hourly",
+     "score3single_clinicalresponse": ["Registered Nurse to inform the medical team caring for the patient, who will review and decide whether escalation of care is necessary." ],
+     "score3single_text": "3 in single parameter",
+     "score3single_cssclass": "EWS_LOW-MEDIUM",
+
+
+     "score5to6_frequency": "Minimum 1 hourly",
+     "score5to6_clinicalresponse": [
+       "<ul class='ak-ul'><li><p>Inform Registered Nurse immediately to assess using ABCDE approach.</p></li><li><p>Registered nurse to immediately inform the medical team caring for the patient and:</p></li></ul><ol class='ak-ol'><li><p>Request urgent assessment by the Ward Doctor and Duty Senior Nurse (DSN) (contact Duty Doctor and DSN out of hours) via switchboard who should respond within 30 minutes.</p></li><li><p>Repeat urgent assessment call if no response after 10 minutes.</p></li><li><p>If worried and/or unable to contact medical team <strong><span class='fabric-text-color-mark text-danger' style='color: #ae2e24;'>call 2222 / 999</span></strong>.</p></li><li><p>Provide clinical care in an environment with monitoring facilities.</p></li></ol><p>Registered Nurse handover using SBARD tool.</p><ul class='ak-ul'><li><p>Have emergency equipment at the ready, delegate tasks to team.</p></li><li><p>Give emergency oxygen if oxygen saturation is below 94% (88% for COPD).</p></li><li><p>Assess for signs of hypovolaemia.</p></li><li><p>Consider IV access, give 500 mls IV normal saline.</p></li></ul><table style='border: 1px solid black; width: 100%'><tr><td style='border-right: 1px solid black;'><p>Consider sepsis:</p><ul class='ak-ul'><li><p><strong><span class='fabric-text-color-mark text-danger' style='color: #ae2e24;'>S</span></strong>lurred speech</p></li><li><p><strong><span class='fabric-text-color-mark text-danger' style='color: #ae2e24;'>E</span></strong>xtreme shivering/muscle pain</p></li><li><p><strong><span class='fabric-text-color-mark text-danger' style='color: #ae2e24;'>P</span></strong>assing no urine (in a day)</p></li><li><p><strong><span class='fabric-text-color-mark text-danger' style='color: #ae2e24;'>S</span></strong>evere breathlessness</p></li><li><p><strong><span class='fabric-text-color-mark text-danger' style='color: #ae2e24;'>“I”</span></strong> feel I might die</p></li><li><p><strong><span class='fabric-text-color-mark text-danger' style='color: #ae2e24;'>S</span></strong>kin mottled and discoloured.</p></li></ul></td><td><p>Consider neuroleptic malignant syndrome:</p><ul class='ak-ul'><li><p>High temperature/fever, profuse sweating</p></li><li><p>Muscle rigidity</p></li><li><p>High pulse and respiration rate</p></li><li><p>Irregular pulse</p></li><li><p>Altered mental state</p></li><li><p>Decreased urine output.</p></li></ul></td></tr></table>"
+     ],
+     "score5to6_text": "Total 5 or more \n Urgent response threshold",
+     "score5to6_cssclass": "EWS_MEDIUM",
+
+     "score7ormore_frequency": "Continuous monitoring of vital signs. \n Allocate staff with required competence and skills to remain with patient.",
+     "score7ormore_clinicalresponse": [
+       "<p><strong><span class='fabric-text-color-mark text-danger' style='--custom-palette-color: var(--ds-text-accent-red, #BF2600);'>Call 2222 now and call 999.</span></strong></p><ul class='ak-ul'><li><p>Registered nurse to immediately inform the medical team caring for the patient, for emergency assessment – this should be at least at specialist registrar level.</p></li><li><p>Emergency assessment by a team with critical care competencies, including practitioner(s) with advanced airway management skills.</p></li><li><p>Consider transfer of care to a level 2 or 3 clinical care facility, i.e. higher-dependency unit or ICU.</p></li><li><p>Clinical care in an environment with monitoring facilities.</p></li><li><p>Have emergency equipment at the ready, delegate tasks to the team.</p></li><li><p>Give emergency oxygen if oxygen saturation below 94% (88% COPD).</p></li><li><p>Assess for signs of hypovolaemia.</p></li><li><p>Consider IV access, give 500 mls IV normal saline.</p></li></ul><p>When emergency services are called, check porters are aware to ensure quick access to ward and site, and ensure a member of staff is available at the front entrance of the unit to meet the ambulance crew.</p>"
+     ],
+     "score7ormore_text": "Total 7 or more \n Emergency response threshold",
+     "score7ormore_cssclass": "EWS_HIGH"
+   },
+   "pewsguidance": {
+     "topConcernsText": "Regardless of the PEWS score, if you have concerns please discuss with the Clinical Practitioner for the Acute Intervention Team (\"call Acute Intervention Team\" on Vocera).",
+
+     "guidance0_text": "Zero Score",
+     "guidance0_medicalreviewtimings": "As agreed with medical team",
+     "guidance0_minimalobservations": "Must reassess as per PEWS protocol (and then document ongoing plan on EPR)",
+     "guidance0_communicationresponse": [ "<ul><li>Inform Nurse-in-charge.</li></ul>" ],
+     "guidance0_clinicalresponse": [ "<ul><li>Zero Score</li></ul>" ],
+     "guidanceZEROSCORE(ZS)_cssclass":"LEVEL_ZERO",
+
+     "guidanceLOW_text": "Low",
+     "guidanceLOW_medicalreviewtimings": "As agreed with medical team",
+     "guidanceLOW_minimalobservations": "Must reassess within 60 minutes (and then document ongoing plan on EPR)",
+     "guidanceLOW_communicationresponse": [ "<ul><li>Inform Nurse-in-charge.</li></ul><ul><li>Consider Medical Review by Duty Doctor if physically unwell, persistent or escalating in symptoms.</li></ul>" ],
+     "guidanceLOW_clinicalresponse": [ "<ul><li>Low</li></ul>" ],
+     "guidanceLOW(L)_cssclass":"LEVEL_LOW",
+
+     "guidanceMEDIUM_text": "Medium",
+     "guidanceMEDIUM_medicalreviewtimings": "Within 30 minutes",
+     "guidanceMEDIUM_minimalobservations": "Must reassess within 30 minutes (and then document ongoing plan on EPR). Continuous Oxygen Saturation monitoring as needed.",
+     "guidanceMEDIUM_communicationresponse": [ "<ul><li>Review by Nurse-in-charge for potential escalation (and/or DSN or Duty Doctor).</li></ul><ul><li>Request Medical Review by Ward Doctor or Duty Doctor.</li></ul><ul><li>Monitoring plan, consider conveyance to A&E.</li></ul>" ],
+     "guidanceMEDIUM_clinicalresponse": [ "<ul><li>Medium</li></ul>" ],
+     "guidanceMEDIUM(M)_cssclass": "LEVEL_MEDIUM",
+
+     "guidanceHIGH_text": "High",
+     "guidanceHIGH_medicalreviewtimings": "Immediate",
+     "guidanceHIGH_minimalobservations": "Every 5 minutes and continuous monitoring of Respiratory Rate / Oxygen Saturation / GCS recording if change in AVPU.",
+     "guidanceHIGH_communicationresponse": [ "<ul><li>Immediate 2222 call: “Medical Emergency” and review by Nurse-In-Charge, Duty Doctor and Duty Senior Nurse.</li></ul><ul><li>Call for ‘Rapid Review’, 2222 call out (Duty Doctor and DSN) .</li></ul><ul><li>Monitoring plan, whilst waiting for transfer to urgent care setting.</li></ul>" ],
+     "guidanceHIGH_clinicalresponse": [ "<ul><li>High</li></ul>" ],
+     "guidanceHIGH(H)_cssclass": "LEVEL_HIGH",
+
+     "guidanceEMERGENCY_text": "Emergency",
+     "guidanceEMERGENCY_medicalreviewtimings": "Immediate",
+     "guidanceEMERGENCY_minimalobservations": "Every 5 minutes and continuous monitoring of Respiratory Rate / Oxygen Saturation / GCS recording if change in AVPU.",
+     "guidanceEMERGENCY_communicationresponse": [ "<ul><li>Immediate 2222 call: “Medical Emergency” and review by Nurse-In-Charge, Duty Doctor and Duty Senior Nurse.</li></ul><ul><li>Call for ‘Rapid Review’, 2222 call out (Duty Doctor and DSN) .</li></ul><ul><li>Monitoring plan, whilst waiting for transfer to urgent care setting.</li></ul>" ],
+     "guidanceEMERGENCY_clinicalresponse": [ "<ul><li>Emergency</li></ul>" ],
+     "guidanceEMERGENCY(E)_cssclass": "PEWS_EMERGENCY",
+
+     "score0_text": "0",
+     "score0_frequency": "4-12 hourly",
+     "score0_clinicalresponse": [ "<ul><li>Continue monitoring</li></ul>" ],
+     "score0_cssclass": "PEWS_LOW",
+
+     "score1_text": "1",
+     "score1_frequency": "4 hourly",
+     "score1_clinicalresponse": [ "<ul><li>Continue monitoring</li></ul>" ],
+     "score1_cssclass": "PEWS_LOW",
+
+     "score2_text": "2",
+     "score2_frequency": "2 hourly",
+     "score2_clinicalresponse": [ "<ul><li>Nurse in charge review</li><li>Review by the paediatric medical team (08:00-20:00 hrs) or the RMO (20:00-08:00 hrs)</li></ul>" ],
+     "score2_cssclass": "PEWS_LOW",
+
+     "score3_text": "3",
+     "score3_frequency": "1 hourly",
+     "score3_clinicalresponse": [ "<ul><li>Nurse in charge review</li><li>Review by the paediatric medical team (08:00-20:00 hrs) or the RMO (20:00-08:00 hrs)</li><li>Review by AIT (\"call Acute Intervention Team\" on Vocera)</li><li>Review by surgical team</li><li>Inform paediatric consultant (0:00-24:00 hrs)</li></ul>" ],
+     "score3_cssclass": "PEWS_MEDIUM",
+
+     "score4_text": "4",
+     "score4_frequency": "1 hourly",
+     "score4_clinicalresponse": [ "<ul><li>Nurse in charge review</li><li>Review by the paediatric medical team (08:00-20:00 hrs) or the RMO (20:00-08:00 hrs)</li><li>Review by AIT (\"call Acute Intervention Team\" on Vocera)</li><li>Review by surgical team</li><li>Inform paediatric consultant (0:00-24:00 hrs)</li></ul>"],
+     "score4_cssclass": "PEWS_MEDIUM",
+
+     "score5_text": "5",
+     "score5_frequency": "Every 15 Minutes",
+     "score5_clinicalresponse": [ "<ul><li>Registered nurse to refer immediately to the Medical Emergency Team (\"urgent broadcast to Medical Emergency Team\" on Vocera)</li><li>Inform paediatric consultant after MET review (0:00-24:00 hrs)</li></ul>" ],
+     "score5_cssclass": "PEWS_HIGH",
+
+     "score6_text": "6",
+     "score6_frequency": "Every 15 Minutes",
+     "score6_clinicalresponse": [ "<ul><li>Registered nurse to refer immediately to the Medical Emergency Team (\"urgent broadcast to Medical Emergency Team\" on Vocera)</li><li>Inform paediatric consultant after MET review (0:00-24:00 hrs)</li></ul>" ],
+     "score6_cssclass": "PEWS_HIGH",
+
+     "score7_text": "7",
+     "score7_frequency": "Every 15 Minutes",
+     "score7_clinicalresponse": [ "<ul><li>Registered nurse to refer immediately to the Medical Emergency Team (\"urgent broadcast to Medical Emergency Team\" on Vocera)</li><li>Inform paediatric consultant after MET review (0:00-24:00 hrs)</li></ul>"],
+     "score7_cssclass": "PEWS_HIGH"
+
+   },
+   "MEWSguidance": {
+    
+      "topConcernsText": "Regardless of the MEWS score, if you have concerns please discuss with the Clinical Practitioner for the Acute Intervention Team (\"call Acute Intervention Team\" on Vocera).",
+
+      "guidanceLOW_text": "Low",
+      "guidanceLOW_primaryescalationresponse": "Registered nurse to review patient.",
+      "guidanceLOW_medicalreviewtimings": "N/A",
+      "guidanceLOW_minimalobservations": [ "<ul><li>Physical observations every 12 hours, as a minimum, for the first 72 hours of admission.</li></ul><ul><li>Continue minimum daily monitoring for a minimum of 4 days unless patients’ physical health condition changes, then a care plan is required.</li></ul><ul><li>Always record respirations and level of consciousness if other observations refused.</li></ul>" ],
+      "guidanceLOW_secondarycontact": "N/A",
+      "guidanceLOW_additionalconcern": [ "<ul><li>Low</li></ul>" ],
+      "guidanceLOW_cssclass": "MEWS_LOW",
+      
+      "guidanceLOWMEDIUM_text": "Low - medium",
+      "guidanceLOWMEDIUM_primaryescalationresponse": "Registered nurse to review patient and inform medical team caring for the patient for assessment (ward doctor or duty doctor).",
+      "guidanceLOWMEDIUM_medicalreviewtimings": "Within 30 minutes",
+      "guidanceLOWMEDIUM_minimalobservations": [ "<ul><li>Reassess observations within 30 minutes & document ongoing plan</li></ul><ul><li>4 – 6 hourly observations</li></ul>" ],
+      "guidanceLOWMEDIUM_secondarycontact": "N/A",
+      "guidanceLOWMEDIUM_additionalconcern": [ "<ul><li>Low</li></ul>" ],
+      "guidanceLOWMEDIUM_cssclass": "MEWS_LOW-MEDIUM",  
+        
+      "guidanceMEDIUM_text": "Medium",
+      "guidanceMEDIUM_primaryescalationresponse": "Registered nurse to review patient and if concerned, inform medical team caring for the patient for urgent assessment (ward doctor or duty doctor).",
+      "guidanceMEDIUM_medicalreviewtimings": "Within 15 - 30 minutes",
+      "guidanceMEDIUM_minimalobservations": [ "<ul><li>Reassess observations within 15 minutes & document ongoing plan</li></ul><ul><li>Observations every 15 minutes</li></ul>" ],
+      "guidanceMEDIUM_secondarycontact": "Discuss with senior medical team at SLaM or A&E/MAU. If worried and/or unable to contact medical team call 2222 and 999.",
+      "guidanceMEDIUM_additionalconcern": [ "<ul><li>Low</li></ul>" ],
+      "guidanceMEDIUM_cssclass": "MEWWS_MEDIUM",
+      
+      "guidanceHIGH_text": "High",
+      "guidanceHIGH_primaryescalationresponse": "Registered nurse to immediately inform the medical team caring for the patient for emergency assessment (ward doctor or duty doctor).",
+      "guidanceHIGH_medicalreviewtimings": "Immediate",
+      "guidanceHIGH_minimalobservations": [ "<ul><li>Continuous observations</li></ul><ul><li>Observations  every 5 minutes</li></ul>" ],
+      "guidanceHIGH_secondarycontact": "Call 2222 now and call 999.",
+      "guidanceHIGH_additionalconcern": [ "<ul><li>Low</li></ul>" ],
+      "guidanceHIGH_cssclass": "MEWS_HIGH"
+      
+    },
+    "marsiguidance": {
+    
+      "topConcernsText": "Regardless of the Marsi MEWS score, if you have concerns please immediately discuss with a Registered Nurse or the medical team caring for the patient.",
+
+      "guidanceNORISK_score": "0",
+      "guidanceNORISK_text": "Zero Score",
+      "guidanceNORISK_primaryescalationresponse": [ "<ul><li>Continue routine Marsi MEWS scoring with every set of physical health observations</li></ul>"],
+      "guidanceNORISK_medicalreviewtimings": "No medical escalation required",
+      "guidanceNORISK_minimalobservations": ["<ul><li>On admission AND for the next 7 days, the monitoring frequency should default to 6 hourly.</li></ul><ul><li>Then on Day 8, switch to routine monitoring (as per local minimal intervals) i.e. Once in every 24-hour period</li></ul>" ],
+      "guidanceNORISK_cssclass": "MARSI_NORISK",
+
+      "guidanceLOW_score": "1-2",
+      "guidanceLOW_text": "Low",
+      "guidanceLOW_primaryescalationresponse": [ "<ul><li>Inform Registered Nurse who must assess the patient</li></ul><ul><li>Registered Nurse to decide frequency of observations and document on Marsi MEWS chart</li></ul><ul><li>Registered Nurse to assess if review by Doctor or Senior Nurse or escalation of clinical care is required. For areas where medics on site, the Registered Nurse should consult with a medic</li></ul><ul><li>Ensure patients raised Marsi MEWS (outside of usual exception & variance) is discussed at next medical and nursing handover</li></ul>" ],
+      "guidanceLOW_medicalreviewtimings": "Inform ward doctor or duty doctor out of hours",
+      "guidanceLOW_minimalobservations": ["<ul><li>On admission AND for the next 7 days, the monitoring frequency should default to 6 hourly.</li></ul><ul><li>Then on Day 8, switch to routine monitoring (as per local minimal intervals) i.e. 4 hourly</li></ul>" ],
+      "guidanceLOW_cssclass": "MARSI_LOW",
+     
+      "guidanceMEDIUM_score": "3-4",
+      "guidanceMEDIUM_text": "Medium",
+      "guidanceMEDIUM_primaryescalationresponse": [ "<ul><li>Inform Registered Nurse who must assess the patient</li></ul><ul><li>Registered Nurse to assess patient, escalate (using SBARD handover tool) to Doctor and request urgent review within 30 minutes</li></ul>" ],
+      "guidanceMEDIUM_medicalreviewtimings": "30 minutes",
+      "guidanceMEDIUM_minimalobservations": [ "<ul><li>Increase frequency of physical health observations to at least 1 hourly.</li></ul><ul><li>Remember: Sepsis Flag Signs</li><ul><li>Slurred speech</li></ul><ul><li>Extreme shivering/muscle pain</li></ul><ul><li>Passing no urine in 12 hours</li></ul><ul><li>Severe breathlessness</li></ul><ul><li>I feel like I might die</li></ul><ul><li>Skin mottled/discoloured</li></ul></ul><ul><li>If the Doctor is unable to assess in 30 minutes and concerns remain, or patient deteriorates further, dial 999 or 2222 for ambulance assistance</li></ul><ul><li>Ensure patients raised Marsi MEWS (outside of usual exception & variance) is discussed at next medical and nursing handover</li></ul>" ],
+      "guidanceMEDIUM_cssclass": "MARSI_MEDIUM",
+
+      "guidanceMEDIUMHIGH_score": "5",
+      "guidanceMEDIUMHIGH_text": "Medium - High",
+      "guidanceMEDIUMHIGH_primaryescalationresponse": ["<ul><li>Inform Registered Nurse who must assess the patient</li></ul><ul><li>Registered Nurse to assess patient, escalate (using SBARD handover tool) to Doctor and request urgent review within 30 minutes</li></ul>" ],
+      "guidanceMEDIUMHIGH_medicalreviewtimings": "Within 30 minutes",
+      "guidanceMEDIUMHIGH_minimalobservations": ["<ul><li>Increase frequency of physical health observations to at least 30 minutes.</li></ul><ul><li>Remember: Sepsis Flag Signs</li><ul><li>Slurred speech</li></ul><ul><li>Extreme shivering/muscle pain</li></ul><ul><li>Passing no urine in 12 hours</li></ul><ul><li>Severe breathlessness</li></ul><ul><li>I feel like I might die</li></ul><ul><li>Skin mottled/discoloured</li></ul></ul><ul><li>If the Doctor is unable to assess in 30 minutes and concerns remain, or patient deteriorates further, dial 999 or 2222 for ambulance assistance</li></ul><ul><li>Ensure patients raised Marsi MEWS (outside of usual exception & variance) is discussed at next medical and nursing handover</li></ul>" ],
+      "guidanceMEDIUMHIGH_cssclass": "MARSI_MEDIUM-HIGH",  
+      
+      "guidanceHIGH_score": "6 or more",
+      "guidanceHIGH_text": "High",
+      "guidanceHIGH_primaryescalationresponse": ["<ul><li>A (9)999 or 2222 call for ambulance assistance should be made</li></ul><ul><li>A (9)999 or 2222 call for ambulance assistance should be made</li></ul><ul><li>Inform Registered Nurse who must assess the patient</li></ul><ul><li>Registered Nurse to assess patient using SBARD handover tool to Senior Doctor and request immediate review</li></ul><ul><li>Emergency assessment by ward doctor or duty doctor whose should discuss with patients Consultant/on-call Consultant.</li></ul><ul><li>Ensure patients raised Marsi MEWS (outside of usual exception & variance) is discussed at next medical and nursing handover</li></ul><ul><li>Where possible, a Registered Nurse to remain with the patient</li></ul>" ],
+      "guidanceHIGH_medicalreviewtimings": "Immediate",
+      "guidanceHIGH_minimalobservations": [ "<ul><li>Continuous monitoring of physical health observations</li></ul><ul><li>Every 15 minutes</li></ul>" ],
+      "guidanceHIGH_cssclass": "MARSI_HIGH"
+      
+    },
+   "obsFormFields":[
+    "patientRefused", "respirationRate","oxygenSaturation","supplementalOxygen","systolicBP","diastolicBP","positionBP",
+     "pulseRate","consciousLevel","laterality","temperature","observationDate","observationTime"
+   ],
+    "obsPEWSFormFields":[
+     "patientRefused", "respirationRate","supplementalOxygen","systolicBP","diastolicBP","positionBP","suspicionOfSepsisOrSepticShock", "suspicionOfNMS","clinicalIntuition","temperature",
+      "observationDate","observationTime", "SpO2", "respiratorySupport", "heartRate", "oxygenSupport", "CRT", "AVPU", "carerQuestionWSBAU", "respirationDistress", "FiO2", "oxygenFlowRate"
+    ],  
+    "obsMEWSFormFields":[
+     "patientRefused", "respirationRate","systolicBP","diastolicBP","positionBP","temperature","healthCareProfessionalConcerned","familyConcerned","additionalTherapies","increasedPain","vaginalBleeding",
+      "observationDate","observationTime", "SpO2", "pulse","reducedUrineOutput","alteredLevelConsciousnessResponsiveness"
+    ], 
+    "obsMARSIFormFields":[
+     "patientRefused", "respirationRate","temperature", "ACVPU","observationDate","observationTime", "SpO2", "heartRate",
+     "systolicstanding","diastolicstanding","systolicsitting","diastolicsitting"
+    ], 
+    "skipTitleCase": [
+      "Reason for amend", "Reason for incomplete set" , "Monitoring comments"
+    ],  
+   "SBAR":{
+     "showDoesThePatientLookSick": false,
+     "showCouldThisBeDueToAnInfection": false,
+     "showConcernsAboutThisPatient": false,
+     "showHaveYouEscalatedCare": true,
+     "showToWhomHaveYouEscalatedCare": true,
+     "showReasonForNotEscalating": false,
+     "defaultMonitoringFrequency":12,
+     "defaultMonitoringFrequencyUnit":"hours",
+     "defaultPEWSMonitoringFrequency":1,
+     "defaultPEWSMonitoringFrequencyUnit":"hours",
+     "defaultMARSIMonitoringFrequency":12,
+     "defaultMARSIMonitoringFrequencyUnit":"hours",
+     "monitoringFrequencyValues": [
+       {"text":"5 minutes" , "value":"0.08" } , 
+       {"text":"10 minutes" , "value":"0.067" } , 
+       {"text":"15 minutes" , "value":"0.25" } , 
+       {"text":"30 minutes" , "value":"0.5" } , 
+       {"text":"Every hour" , "value":"1" } , 
+       {"text":"2 hours" , "value":"2" } , 
+       {"text":"4 hours" , "value":"4" } , 
+       {"text":"6 hours" , "value":"6" } , 
+       {"text":"8 hours" , "value":"8" } , 
+       {"text":"10 hours" , "value":"10" } , 
+       {"text":"12 hours" , "value":"12" } , 
+       {"text":"Every day" , "value":"24" } , 
+       {"text":"Every 3 days" , "value":"72" } , 
+       {"text":"Every week" , "value":"168" } ,
+       {"text":"Monitoring not clinically indicated" , "value":"0" } 
+        ]        
+     },
+ "SBARGuidance" :"<div > <div class='card '> <div class=' row'><div class='col-1 align-self-center'><h2 class='p-2'>S</h2></div> <div class = 'col-11 border-left'>  <p class='pt-3'><strong>Situation</strong>: I am (name), a nurse on ward (name of ward)</p> <p>I am calling about (patient name)</p><p>I am calling because I am concerned that … (e.g. BP is low/high, pulse is XX, temperature is XX, Early Warning Score is XX)</p></div> </div> </div> <div class='card '> <div class=' row'><div class='col-1 align-self-center' style='background-color: #9890c1;'><h2 class='p-2'>B</lable></div>  <div class = 'col-11 border-left'>  <p class='pt-3'><strong>Background</strong>: Patient (patient name) was admitted on (date of admission) and has been presenting as physically well until today.</p><p>Patient (patient name) has a history of (physical health conditions)</p>  <p>Patient (patient name) has been complaining of …</p>  <p>Previous Early Warning Score was (EWS)</p> <p>Patient (patient name)is on (medications) and medication compliance was … </p> </div> </div></div> <div class='card '> <div class=' row'> <div class='col-1 align-self-center' style='background-color: #9890c1;'><h2 class='p-2'>A</lable></div> <div class = 'col-11 border-left'>  <p class='pt-3'><strong>Assessment</strong>: I think the problem is (XXX). I have conducted ABCDE assessment and …</p><p>And I have … (e.g. administered medication, oxygen, placed on enhanced observations)</p><p>Or</p> <p>I am not sure what the problem is and patient (patient name) physical health has deteriorated and I am really worried</p></div> </div></div><div class='card '><div class='row'><div class='col-1 align-self-center' style='background-color: #9890c1;'><h2 class='p-2'>R</lable></div> <div class = 'col-11 border-left'>  <p class='pt-3'><strong>Recommendation</strong>:As per Early Warning Score Clinical Response, I need you to see patient (patient name) within … (30 minutes/urgently)</p>  <p>Or</p> <p>I need your advice …</p></div></div></div><div class='card '> <div class='row'><div class='col-1 align-self-center' style='background-color: #9890c1;'><h2 class='p-2'>D</lable></div> <div class = 'col-11 border-left'> <br/><p><strong>Decision</strong>:So we have agreed that you will visit the ward in the next (number of minutes) minutes and in the meantime, we will repeat vital signs and get the ECG machine ready, and call for an ambulance</p>  </div> </div></div>",
+      
+   "pewsAgeThreshold": 18,
+   "hideAddObsForPews": true,
+   "bp_nottaken_warning_message": "BP has not been taken in the last {{threshold}} hours, please take BP observation.",
+   "bpwarningthresholdminutes": 240,
+   "max_consecutive_partial_sets": 2,
+   "partial_notallowed_after_mins": 30,
+   "painscale_warning_threshold_score": 7,
+   "obs_due_warning": "Obs Overdue",
+   "other_concerns_about_patient_warning_message": "Please refer to Registered Nurse and medical team caring for the patient",
+   "could_be_infection_warning_message": "Please escalate and complete inpatient sepsis screening tool",
+   "obs_added_notification_msg": "New observation has been added for this patient by the other user.",
+   "can_send_notification": true,
+   "can_receive_notification": true,
+   "useNews2MonFreq": true,
+   "openGuidModalOnClickFromChart":true,
+   "ObservationTimeRetrospectiveLimit" : 8
+ },
+  "prodbuild": false,
+  "locationNames": [
+    {
+      "locationid": "CHESTNUT",
+      "locationname": "CHESTNUT"
+    },
+    {
+      "locationid": "HORNBEAM",
+      "locationname": "HORNBEAM"
+    },
+    {
+      "locationid": "ASH",
+      "locationname": "ASH"
+    },
+    {
+      "locationid": "ADM",
+      "locationname": "ADM"
+    },
+    {
+      "locationid": "BEACH",
+      "locationname": "BEACH"
+    },
+    {
+      "locationid": "BIRCH",
+      "locationname": "BIRCH"
+    },
+    {
+      "locationid": "CEDAR",
+      "locationname": "CEDAR"
+    },
+    {
+      "locationid": "CHERRY",
+      "locationname": "CHERRY"
+    },
+    {
+      "locationid": "ELM",
+      "locationname": "ELM"
+    },
+    {
+      "locationid": "HDU",
+      "locationname": "HDU"
+    },
+    {
+      "locationid": "OAK",
+      "locationname": "OAK"
+    },
+    {
+      "locationid": "PINE",
+      "locationname": "PINE"
+    },
+    {
+      "locationid": "PLUM",
+      "locationname": "Plum Location"
+    },
+    {
+      "locationid": "REC",
+      "locationname": "REC"
+    },
+    {
+      "locationid": "SYCAMORE",
+      "locationname": "SYCAMORE"
+    },
+    {
+      "locationid": "WALNUT",
+      "locationname": "WALNUT"
+    },
+    {
+      "locationid": "1244",
+      "locationname": "1 Heather Close"
+    },
+    {
+      "locationid": "1322",
+      "locationname": "1 Heather Close Contracting"
+    },
+    {
+      "locationid": "1245",
+      "locationname": "5 Heather Close"
+    },
+    {
+      "locationid": "1323",
+      "locationname": "5 Heather Close Contracting"
+    },
+    {
+      "locationid": "120",
+      "locationname": "AL1 Ward - Maudsley"
+    },
+    {
+      "locationid": "162",
+      "locationname": "Brook"
+    },
+    {
+      "locationid": "1122",
+      "locationname": "Brook Contracting"
+    },
+    {
+      "locationid": "184",
+      "locationname": "Chaffinch"
+    },
+    {
+      "locationid": "1127",
+      "locationname": "Chaffinch Contracting"
+    },
+    {
+      "locationid": "187",
+      "locationname": "Chelsham House - Bethlem"
+    },
+    {
+      "locationid": "1181",
+      "locationname": "Clare Ward Male"
+    },
+    {
+      "locationid": "1280",
+      "locationname": "Croydon PICU"
+    },
+    {
+      "locationid": "308",
+      "locationname": "Eden ICU - Landor Road"
+    },
+    {
+      "locationid": "1193",
+      "locationname": "Effra"
+    },
+    {
+      "locationid": "1197",
+      "locationname": "Effra Contracting"
+    },
+    {
+      "locationid": "324",
+      "locationname": "ES1 Ward - Maudsley"
+    },
+    {
+      "locationid": "328",
+      "locationname": "Evans Unit - Ladywell"
+    },
+    {
+      "locationid": "1321",
+      "locationname": "Fitzmary 1"
+    },
+    {
+      "locationid": "1425",
+      "locationname": "Florence Ward"
+    },
+    {
+      "locationid": "355",
+      "locationname": "Forensic Inpatient Ward in Community"
+    },
+    {
+      "locationid": "1200",
+      "locationname": "Forensic Inpatient Ward in Community Contracting"
+    },
+    {
+      "locationid": "372",
+      "locationname": "Greenvale Specialist Care Unit"
+    },
+    {
+      "locationid": "374",
+      "locationname": "Gresham 1"
+    },
+    {
+      "locationid": "376",
+      "locationname": "Gresham 2"
+    },
+    {
+      "locationid": "380",
+      "locationname": "Hayworth Ward - Ladywell"
+    },
+    {
+      "locationid": "395",
+      "locationname": "Jim Birley Unit - Maudsley"
+    },
+    {
+      "locationid": "397",
+      "locationname": "John Dickson Ward"
+    },
+    {
+      "locationid": "399",
+      "locationname": "Johnson Unit - Ladywell"
+    },
+    {
+      "locationid": "1183",
+      "locationname": "Leo Male"
+    },
+    {
+      "locationid": "1050",
+      "locationname": "Lewis Unit (Maudsley Hospital)"
+    },
+    {
+      "locationid": "488",
+      "locationname": "Lishman - InPt Ward (Neuropsychiatry & Brain Injury)"
+    },
+    {
+      "locationid": "1454",
+      "locationname": "Lucas Ward"
+    },
+    {
+      "locationid": "505",
+      "locationname": "Luther King Ward - Landor Road"
+    },
+    {
+      "locationid": "138",
+      "locationname": "NAU - InPt Ward (National Autism Unit)"
+    },
+    {
+      "locationid": "544",
+      "locationname": "Nelson Ward - Landor Road"
+    },
+    {
+      "locationid": "562",
+      "locationname": "Norbury"
+    },
+    {
+      "locationid": "1121",
+      "locationname": "Norbury Contracting"
+    },
+    {
+      "locationid": "655",
+      "locationname": "Perinatal - InPt Ward/Parenting Assessment"
+    },
+    {
+      "locationid": "667",
+      "locationname": "Powell Ward - Ladywell"
+    },
+    {
+      "locationid": "679",
+      "locationname": "Psychosis - InPt Ward"
+    },
+    {
+      "locationid": "712",
+      "locationname": "Rehabilitation Ward - Westways"
+    },
+    {
+      "locationid": "1343",
+      "locationname": "Rosa Parks Ward Male"
+    },
+    {
+      "locationid": "730",
+      "locationname": "Ruskin Unit"
+    },
+    {
+      "locationid": "807",
+      "locationname": "Spring"
+    },
+    {
+      "locationid": "1124",
+      "locationname": "Spring Contracting"
+    },
+    {
+      "locationid": "845",
+      "locationname": "Thames"
+    },
+    {
+      "locationid": "1123",
+      "locationname": "Thames Contracting"
+    },
+    {
+      "locationid": "850",
+      "locationname": "Tony Hillis Unit - CBU"
+    },
+    {
+      "locationid": "1137",
+      "locationname": "Tony Hillis Unit - CBU Contracting"
+    },
+    {
+      "locationid": "1174",
+      "locationname": "Tyson West 1 Male"
+    },
+    {
+      "locationid": "1353",
+      "locationname": "Virginia Woolf Ward"
+    },
+    {
+      "locationid": "857",
+      "locationname": "Waddon"
+    },
+    {
+      "locationid": "1198",
+      "locationname": "Waddon Contracting"
+    },
+    {
+      "locationid": "878",
+      "locationname": "Wharton Ward - Ladywell "
+    }
+  ]
+}

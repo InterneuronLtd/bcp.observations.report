@@ -1,0 +1,575 @@
+[  
+    {  
+       "chart_id":"newsobschart",
+       "chart_group":"",
+       "chartname":"Nursing Observation Chart",
+       "graph_id":"MEWS",
+       "graphname":"MEWS",
+       "units":null,
+       "graphtype":"Ordinal",
+       "parameterkey":[  
+          "earlywarningscore"
+       ],
+       "parameterdomain":[  
+ 
+       ],
+       "secondaryparameterdomain":[  
+ 
+       ],
+       "ewsbandingrange":[ "news" 
+ 
+       ],
+       "parameterlabelsdomain":[  
+          "TOTAL"
+       ],
+       "scale":[  
+  
+          "MEWS-Scale"
+       ],
+       "ordinalparameterdomain":[  
+ 
+       ]
+    },
+    {  
+      "chart_id":"newsobschart",     
+      "chartname":"Nursing Observation Chart",
+      "graph_id":"respirations",
+      "graphname":"Respirations",
+      "units":"Breaths/min",
+      "graphtype":"Threshold",
+      "parameterkey":[  
+         "respirations"
+      ],
+      "parameterdomain":[  
+         7.0,
+         9.0,
+         13.0,
+         18.0,
+         22.0,
+         25.0,
+         26.0
+      ],
+      "secondaryparameterdomain":[  
+
+      ],
+      "ewsbandingrange":[  
+         2.0,
+         1.0,
+         0.0,
+         0.0,
+         0.0,
+         1.0,
+         2.0
+      ],
+      "parameterlabelsdomain":[  
+         "≤6",
+         "7-8",
+         "9-12",
+         "13-17",
+         "18-21",
+         "22-24",
+         "≥25"
+      ],
+     "scale":["MEWS-Scale"],
+      "ordinalparameterdomain":[  
+
+      ]
+   },
+   {
+      "chart_id":"newsobschart",
+      "chartname": "Nursing Observation Chart",
+      "graph_id": "spo2-MEWWS",
+      "graphname": "SpO2",
+      "units": "",
+      "graphtype": "Threshold",
+      "parameterkey": [
+        
+        "oxygensaturations"
+       
+      ],
+      "parameterdomain": [
+      
+        93.0,
+        95.0,
+        96.0
+        
+      ],
+      "secondaryparameterdomain": [],
+      "ewsbandingrange": [
+      
+        2.0,
+        1.0,
+        0.0
+      ],
+      "parameterlabelsdomain": [
+      
+        "≤92",
+        "93-94",
+        "≥95"
+      ],
+      "scale":["MEWS-Scale"],
+      "ordinalparameterdomain":[  
+  
+      ]
+    },
+    {  
+      "chart_id":"newsobschart",
+    
+      "chartname":"Nursing Observation Chart",
+      "graph_id":"temperature",
+      "graphname":"Temperature",
+      "units":"°C",
+      "graphtype":"Threshold",
+      "parameterkey":[  
+         "temperature"
+      ],
+      "parameterdomain":[  
+         35.7,
+         36.2,
+         36.8,
+         37.3,
+         37.5,
+         37.6
+      ],
+      "secondaryparameterdomain":[  
+
+      ],
+      "ewsbandingrange":[  
+         2.0,
+         1.0,
+         0.0,
+         0.0,
+         1.0,
+         2.0
+      ],
+      "parameterlabelsdomain":[  
+         "≤35.6°",
+         "35.7–36.1°",
+         "36.2–36.7°",
+         "36.8–37.2°",
+         "37.3–37.4°",
+         "≥37.5°"
+      ],
+      "scale":["MEWS-Scale"],
+      "ordinalparameterdomain":[  
+
+      ]
+   }, 
+   {  
+       "chart_id":"newsobschart",
+   
+       "chartname":"Nursing Observation Chart",
+       "graph_id":"pulse",
+       "graphname":"Pulse",
+       "units":"Beats/min",
+       "graphtype":"Threshold",
+       "parameterkey":[  
+          "pulse"
+       ],
+       "parameterdomain":[
+          63.0, 
+          71.0,
+          86.0,
+          99.0,
+          113.0,
+          122.0,
+          123.0
+       ],
+       "secondaryparameterdomain":[  
+ 
+       ],
+       "ewsbandingrange":[  
+       
+          2.0,
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          2.0
+         
+       ],
+       "parameterlabelsdomain":[  
+          "≤62",      
+          "63-70",
+          "71-85",
+          "86-98",
+          "99-112",        
+          "113-121",        
+          "≥122"
+       ],
+       "scale":["MEWS-Scale"],
+       "ordinalparameterdomain":[  
+ 
+       ]
+    },
+    {  
+      "chart_id":"newsobschart",
+  
+      "chartname":"Nursing Observation Chart",
+      "graph_id":"pulse48",
+      "graphname":"Pulse - from 48 hours post birth ONLY.",
+      "units":"Beats/min",
+      "graphtype":"Threshold",
+      "parameterkey":[  
+         "pulse"
+      ],
+      "parameterdomain":[
+         51.0, 
+         58.0,
+         71.0,
+         85.0,
+         99.0,
+         108.0,
+         109.0
+      ],
+      "secondaryparameterdomain":[  
+
+      ],
+      "ewsbandingrange":[  
+      
+         2.0,
+         1.0,
+         0.0,
+         0.0,
+         0.0,
+         1.0,
+         2.0
+        
+      ],
+      "parameterlabelsdomain":[  
+         "≤50",
+     
+         "51-57",
+         "58-70",
+         "71-84",
+         "85-98",
+       
+         "99-107",
+       
+         "≥108"
+      ],
+      "scale":["MEWS-Scale"],
+      "ordinalparameterdomain":[  
+
+      ]
+   },
+   {  
+      "chart_id":"newsobschart",
+    
+      "chartname":"Nursing Observation Chart",
+      "graph_id":"systolicbloodpressure",
+      "graphname":"Systolic Blood Pressure",
+      "units":"mmHg",
+      "graphlabeladditionaltext":"",
+      "graphtype":"Threshold",
+      "parameterkey":[  
+         "systolicbloodpressure"
+      ],
+      "parameterdomain":[  
+       
+         61.0,
+         77.0,
+         94.0,
+       
+         101.0,
+         111.0,
+         121.0,
+         136.0,
+         145.0,
+         160.0,
+         175.0
+       
+      ],
+      "secondaryparameterdomain":[  
+
+      ],
+      "ewsbandingrange":[  
+         2.0,
+         2.0,
+         2.0,        
+        
+         1.0,
+
+         0.0,
+         0.0,
+         0.0,         
+
+         1.0,
+
+         2.0,
+         2.0,
+         2.0
+      ],
+      "parameterlabelsdomain":[  
+         "≤60",
+     
+         "61-76",
+       
+         "77-93",
+         "94-100",
+         "101-110",
+         "111-120",
+         "121-135",
+       
+         "136-144",
+         "145-159",
+         "160-174",
+         "≥175"
+      ],
+      "scale":["MEWS-Scale"],
+      "ordinalparameterdomain":[  
+
+      ]
+   },
+   {  
+      "chart_id":"newsobschart",
+   
+      "chartname":"Nursing Observation Chart",
+      "graph_id":"diastolicbloodpressure",
+      "graphname":"Diastolic Blood Pressure",
+      "units":"mmHg",
+      "graphlabeladditionaltext":"",
+      "graphtype":"Threshold",
+      "parameterkey":[  
+         "diastolicbloodpressure"
+      ],
+      "parameterdomain":[  
+         57.0,
+         62.0,
+         70.0,
+         80.0,
+         89.0,
+         97.0,
+         110.0
+        
+      ],
+      "secondaryparameterdomain":[  
+
+      ],
+      "ewsbandingrange":[  
+         2.0,
+         1.0,
+       
+       
+        
+         0.0,
+         0.0,
+         0.0,
+         1.0,
+         2.0,
+         2.0
+      ],
+      "parameterlabelsdomain":[  
+         "≤56",
+         "57-61",
+         "62-69",
+         "70-79",
+         "80-88",
+         "89-96",
+         "97-109",         
+         "≥110"
+      ],
+      "scale":["MEWS-Scale"],
+      "ordinalparameterdomain":[  
+
+      ]
+   },
+   {
+    "chart_id": "newsobschart",
+   
+    "chart_group":"",
+    "Infobutton":"",
+    "chartname": "Nursing Observation Chart",
+    "graph_id": "mewsHealthcare",
+    "graphname": "Healthcare professional concerned",
+    "units": "",
+    "graphtype": "Ordinal",
+    "parameterkey": ["mews_healthcareprofessionalconcerned"],
+    "parameterdomain": [],
+    "secondaryparameterdomain": [],
+    "ewsbandingrange": [],
+    "parameterlabelsdomain": ["(Y/N)"],
+    
+    "scale":["MEWS-Scale"],
+    "ordinalparameterdomain":[  
+
+    ]
+},
+   {
+    "chart_id": "newsobschart",
+   
+    "chart_group":"",
+    "Infobutton":"",
+    "chartname": "Nursing Observation Chart",
+    "graph_id": "mews_familyconcerned",
+    "graphname": "Woman/family concerned",
+    "units": "",
+    "graphtype": "Ordinal",
+    "parameterkey": ["mews_familyconcerned"],
+    "parameterdomain": [],
+    "secondaryparameterdomain": [],
+    "ewsbandingrange": [],
+    "parameterlabelsdomain": ["(Y/N)"],
+    
+    "scale":["MEWS-Scale"],
+    "ordinalparameterdomain":[  
+
+    ]
+},
+ {
+    "chart_id": "newsobschart",
+   
+    "chart_group":"",
+    "Infobutton":"",
+    "chartname": "Nursing Observation Chart",
+    "graph_id": "mews_additionaltherapies",
+    "graphname": "Significant additional therapies",
+    "units": "",
+    "graphtype": "Ordinal",
+    "parameterkey": ["mews_additionaltherapies"],
+    "parameterdomain": [],
+    "secondaryparameterdomain": [],
+    "ewsbandingrange": [],
+    "parameterlabelsdomain": ["(Y/N)"],
+    
+    "scale":["MEWS-Scale"],
+    "ordinalparameterdomain":[  
+
+    ]
+},
+{
+    "chart_id": "newsobschart",
+   
+    "chart_group":"",
+    "Infobutton":"",
+    "chartname": "Nursing Observation Chart",
+    "graph_id": "mews_increasedpain",
+    "graphname": "Increased pain (analgesic requirement)",
+    "units": "",
+    "graphtype": "Ordinal",
+    "parameterkey": ["mews_increasedpain"],
+    "parameterdomain": [],
+    "secondaryparameterdomain": [],
+    "ewsbandingrange": [],
+    "parameterlabelsdomain": ["(Y/N)"],
+    
+    "scale":["MEWS-Scale"],
+    "ordinalparameterdomain":[  
+
+    ]
+},
+{
+    "chart_id": "newsobschart",
+   
+    "chart_group":"",
+    "Infobutton":"",
+    "chartname": "Nursing Observation Chart",
+    "graph_id": "mews_vaginalbleeding",
+    "graphname": "Significant vaginal bleeding",
+    "units": "",
+    "graphtype": "Ordinal",
+    "parameterkey": ["mews_vaginalbleeding"],
+    "parameterdomain": [],
+    "secondaryparameterdomain": [],
+    "ewsbandingrange": [],
+    "parameterlabelsdomain": ["(Y/N)"],
+    
+    "scale":["MEWS-Scale"],
+    "ordinalparameterdomain":[  
+
+    ]
+},
+{
+    "chart_id": "newsobschart",
+   
+    "chart_group":"",
+    "Infobutton":"",
+    "chartname": "Nursing Observation Chart",
+    "graph_id": "mews_reducedurineoutput",
+    "graphname": "Reduced urine output",
+    "units": "",
+    "graphtype": "Ordinal",
+    "parameterkey": ["mews_reducedurineoutput"],
+    "parameterdomain": [],
+    "secondaryparameterdomain": [],
+    "ewsbandingrange": [],
+    "parameterlabelsdomain": ["(Y/N)"],
+    
+    "scale":["MEWS-Scale"],
+    "ordinalparameterdomain":[  
+
+    ]
+},
+{
+    "chart_id": "newsobschart",
+   
+    "chart_group":"",
+    "Infobutton":"",
+    "chartname": "Nursing Observation Chart",
+    "graph_id": "mews_alteredlevelconsciousnessresponsiveness",
+    "graphname": "Altered level of consciousness/responsiveness",
+    "units": "",
+    "graphtype": "Ordinal",
+    "parameterkey": ["mews_alteredlevelconsciousnessresponsiveness"],
+    "parameterdomain": [],
+    "secondaryparameterdomain": [],
+    "ewsbandingrange": [],
+    "parameterlabelsdomain": ["(Y/N)"],
+    
+    "scale":["MEWS-Scale"],
+    "ordinalparameterdomain":[  
+
+    ]
+},
+
+   {
+        "chart_id": "newsobschart",
+           "LineSpaceForOrdinal":true,
+        "chart_group":"",
+        "chartname": "Nursing Observation Chart",
+        "graph_id": "mews_monitoring",
+        "graphname": "Monitoring",
+        "units": "",
+        "graphtype": "Ordinal",
+        "parameterkey": ["monitoring"],
+        "parameterdomain": [],
+        "secondaryparameterdomain": [],
+        "ewsbandingrange": [],
+        "parameterlabelsdomain": ["M/H/D"],
+      "scale":["MEWS-Scale"],
+        "ordinalparameterdomain":[]
+    },{
+        "chart_id": "newsobschart",
+        "chart_group":"",
+        "chartname": "Nursing Observation Chart",
+        "graph_id": "escalationofcare",
+        "graphname": "Escalation",
+        "units": null,
+        "graphtype": "Ordinal",
+        "parameterkey": ["escalationofcare"],
+        "parameterdomain": [],
+        "secondaryparameterdomain": [],
+        "ewsbandingrange": [],
+        "parameterlabelsdomain": ["Y/N"],
+       "scale":["MEWS-Scale"],
+        "ordinalparameterdomain":[]
+    },
+    {
+        "chart_id": "newsobschart",
+        "chart_group":"",
+      
+        "chartname": "Nursing Observation Chart",
+        "graph_id": "recordedby",
+        "graphname": "Recorded by",
+        "units": null,
+        "graphtype": "Ordinal",
+        "parameterkey": ["username"],
+        "parameterdomain": [],
+        "secondaryparameterdomain": [],
+        "ewsbandingrange": [],
+        "parameterlabelsdomain": ["Initials"],
+        "scale":["MEWS-Scale"],
+        "ordinalparameterdomain":[]
+    }
+ ]
